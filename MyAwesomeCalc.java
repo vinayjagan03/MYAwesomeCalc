@@ -132,14 +132,33 @@ public class MyAwesomeCalc {
 			System.out.println("Answer: " + area);
 		}
 	}
+	
+	public static void ending() {
+		System.out.println("");
+		System.out.println("Thank you for using Calculator in Java | By: Vinay Jagan");
+		System.out.println("");
+	}
+	
+	public static void end(){
+		System.out.println("Enter <10> to continue and <11> to exit");
+		int ender = scan.nextInt();
+		while (true) {
+			if (10) {
+			calculate();
+			ending();
+			}
+			if (11) {
+			System.exit(0)
+			}
+		}
+	}
 
 	// Main method "BIG Need-Need!!"
 	public static void main(String[] args) {
 		System.out.println("Welcome to Calculator in Java | By: Vinay Jagan");
 		System.out.println("");
 		calculate();
-		System.out.println("");
-		System.out.println("Thank you for using Calculator in Java | By: Vinay Jagan");
-		System.out.println("");
+		ending();
+		end();
 	}
 }
